@@ -1,0 +1,229 @@
+.basket {
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   gap: 32px;
+   margin-top: 64px;
+   margin-bottom: 64px;
+
+   &_content {
+      grid-column: span 8;
+
+   }
+
+   &_name-box {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 14px;
+   }
+
+   &_item {
+      border-top: 0.5px solid #CACDD8;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-top: 25px;
+      padding-bottom: 32px;
+   }
+
+   &_left {
+      display: flex;
+      gap: 32px;
+   }
+
+   &_info {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      width: 276px;
+   }
+
+   &_name {
+      color: #000;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+   }
+
+   &_description {
+      color: #888;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+   }
+
+   &_prise {
+      color: #050505;
+      text-align: left;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+   }
+
+   &_link_box {
+      display: flex;
+      width: 85px;
+      height: 29.001px;
+      flex-direction: row;
+      flex-shrink: 0;
+      gap: 30px;
+   }
+
+   .item_link {
+      color: #000;
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 210%;
+      text-decoration-line: underline;
+   }
+
+   &_input {
+      border-radius: 6px;
+      background: #F7F6F6;
+      width: 71px;
+      height: 51px;
+      flex-shrink: 0;
+      color: var(--color-7, #000);
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 210%;
+      padding-left: 16px;
+      padding-right: 16px;
+      border: antiquewhite;
+   }
+
+   &_button_box {
+      display: flex;
+      gap: 7px;
+      margin-top: 18px;
+   }
+
+   &_button1 {
+      display: inline-flex;
+      padding: 10px 34px 10px 33px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+      border: 1px solid #000;
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      color: #020202;
+   }
+   &_button1:hover{
+      background: var(--color-7, #000);
+   }
+
+   
+
+   &_button2 {
+      display: inline-flex;
+      padding: 10px 22px 10px 20px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+      border: 1px solid #000;
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      color: #020202;
+   }
+
+   &_form {
+      background-color: #F7F6F6;
+      border-radius: 20px;
+      width: 379px;
+      height: 556px;
+      top: 464px;
+      left: 941px;
+      grid-column: span 4;
+   }
+}
+
+.form {
+   padding-top: 42px;
+
+
+   &_heading {
+      color: #000;
+      text-align: center;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      font-family: Poppins;
+
+   }
+
+   &_box {
+      padding-top: 35px;
+      padding-left: 28px;
+      padding-right: 64px;
+      display: flex;
+      flex-direction: column;
+      gap: 61px;
+   }
+
+   &_item {
+      border: none;
+      border-bottom: 1px solid #CACDD8;
+      background-color: #F7F6F6;
+      outline: none;
+      padding-bottom: 3px;
+      color: #000;
+      text-align: left;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 17px;
+
+      &::placeholder {
+         color: #000;
+      }
+   }
+
+   &_total {
+      text-align: center;
+      color: #000;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      padding-top: 64px;
+      margin-bottom: 18px;
+
+   }
+
+   &_button {
+      border-radius: 20px;
+      border: 1px solid #040404;
+      margin-left: 44px;
+      margin-right: 45px;
+      height: 41px;
+      color: #000;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 10px 63px 11px 0px;
+
+   }
+
+   @import "tablet";
+   
+}
